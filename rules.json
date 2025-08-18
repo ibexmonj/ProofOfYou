@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "subject": {
-    "id": "did:web:proofofyou.org",
+    "id": "did:web:proofofyou.com",
     "name": "Your Name",
     "timezone": "America/New_York",
     "roles": ["Platform Engineer", "SRE"]

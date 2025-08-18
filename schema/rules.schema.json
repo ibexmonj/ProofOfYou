@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://proofofyou.org/schema/rules.schema.json",
+  "$id": "https://proofofyou.com/schema/rules.schema.json",
   "title": "ProofOfYou Rules v0.1",
   "type": "object",
   "required": ["version", "communication", "engineering", "meta"],
