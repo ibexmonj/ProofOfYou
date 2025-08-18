@@ -1,0 +1,16 @@
+{
+  "@context": ["https://www.w3.org/ns/did/v1"],
+  "id": "did:web:proofofyou.com",
+  "service": [{
+    "id": "did:web:proofofyou.com#poy",
+    "type": "ProofOfYou",
+    "serviceEndpoint": {
+      "rules": "https://proofofyou.com/rules.json",
+      "contributions": "https://proofofyou.com/contributions.json",
+      "schemas": {
+        "rules": "https://proofofyou.com/schema/rules.schema.json",
+        "contributions": "https://proofofyou.com/schema/contributions.schema.json"
+      }
+    }
+  }]
+}
