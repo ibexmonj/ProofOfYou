@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "subject": "did:web:example.org",
+  "subject": "did:web:proofofyou.com",
   "period": {"from": "2024-01-01", "to": "2025-08-18"},
   "highlights": [
     {

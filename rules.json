@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "subject": {
-    "id": "did:web:example.org",
+    "id": "did:web:proofofyou.com",
     "name": "Your Name",
     "timezone": "UTC",
     "roles": ["Engineer", "Writer"]
