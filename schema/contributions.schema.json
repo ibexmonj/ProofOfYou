@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://proofofyou.org/schema/contributions.schema.json",
+  "title": "ProofOfYou Contributions v0.1",
+  "type": "object",
+  "required": ["version", "highlights", "meta"],
+  "properties": {
+    "version": {"type": "string"},
+    "subject": {},
+    "period": {"type": "object"},
+    "highlights": {"type": "array"},
+    "activity_feed": {"type": "array"},
+    "meta": {"type": "object", "required": ["updated_at"]}
+  }
+}

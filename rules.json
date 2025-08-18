@@ -1,0 +1,38 @@
+{
+  "version": "0.1",
+  "subject": {
+    "id": "did:web:proofofyou.org",
+    "name": "Your Name",
+    "timezone": "America/New_York",
+    "roles": ["Platform Engineer", "SRE"]
+  },
+  "communication": {
+    "hours": {"preferred": "10:00-16:00", "timezone": "America/New_York"},
+    "style": ["async-first", "brief->deep", "evidence-led"],
+    "response_expectations": {"slack": "same-day", "email": "24-48h"},
+    "meetings": {"default": "decline-with-alt", "max_per_day": 2}
+  },
+  "engineering": {
+    "principles": [
+      "Prefer declarative infra and GitOps",
+      "Testable changes > heroic fixes",
+      "Small, reversible steps"
+    ],
+  },
+  "collaboration": {
+    "decisions": "ADR or ticket comment with rationale and rollback plan",
+    "code_review": {"max_hours_wait": 24, "nits": "batch; avoid bikeshedding"}
+  },
+  "constraints": {
+    "non_negotiables": [
+      "No production changes without traceability",
+      "No group meetings without pre-read"
+    ],
+    "ethical": ["privacy-by-default", "no dark patterns"]
+  },
+  "meta": {
+    "updated_at": "2025-08-18",
+    "license": "CC BY 4.0",
+    "notes": "Sample data for ProofOfYou v0.1"
+  }
+}

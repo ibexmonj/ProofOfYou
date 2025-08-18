@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://proofofyou.org/schema/rules.schema.json",
+  "title": "ProofOfYou Rules v0.1",
+  "type": "object",
+  "required": ["version", "communication", "engineering", "meta"],
+  "properties": {
+    "version": {"type": "string"},
+    "subject": {"type": "object"},
+    "communication": {"type": "object"},
+    "engineering": {"type": "object"},
+    "collaboration": {"type": "object"},
+    "constraints": {"type": "object"},
+    "meta": {"type": "object", "required": ["updated_at"]}
+  }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ProofOfYou — Personal API v0.1</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;margin:2rem;line-height:1.5;max-width:760px}
+    .card{border:1px solid #e5e7eb;border-radius:16px;padding:1.25rem;margin:1rem 0}
+    code,pre{background:#f6f8fa;border-radius:8px;padding:.25rem .5rem}
+    a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <h1>ProofOfYou — Personal API (v0.1)</h1>
+  <p><strong>Thesis:</strong> ProofOfYou is a personal API ecosystem. <em>ProofOfYou</em> is data. Structured, verifiable data -- <code>/rules</code> (how you work) and <code>/contributions</code> hosted by you, not a platform. 
+  Your work, your context, your domain.</p>
+
+  <div class="card">
+    <h2>Endpoints</h2>
+    <ul>
+      <li><a href="./rules.json"><code>/rules</code></a> — rules of engagement (preferences, values, constraints)</li>
+      <li><a href="./contributions.json"><code>/contributions</code></a> — evidence (commits, tickets, deployments, posts)</li>
+    </ul>
+    <p>Schemas: <a href="./schema/rules.schema.json">rules.schema.json</a> · <a href="./schema/contributions.schema.json">contributions.schema.json</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Why</h2>
+    <ul>
+      <li><strong>Reduce bias:</strong> evaluate structured outputs and declared work rules, not pedigree or vibes.</li>
+      <li><strong>Clarity:</strong> machine-readable context for people and AI agents.</li>
+      <li><strong>Ownership:</strong> host it on your domain. Your data, your control.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Use</h2>
+    <pre>curl https://proofofyou.org/rules.json | jq
+curl https://proofofyou.org/contributions.json | jq</pre>
+  </div>
+
+  <p style="color:#6b7280">v0.1 — sample data. More coming soon.</p>
+</body>
+</html>
