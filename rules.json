@@ -1,31 +1,31 @@
 {
   "version": "0.1",
   "subject": {
-    "id": "did:web:proofofyou.com",
+    "id": "did:web:example.org",
     "name": "Your Name",
-    "timezone": "America/New_York",
-    "roles": ["Platform Engineer", "SRE"]
+    "timezone": "UTC",
+    "roles": ["Engineer", "Writer"]
   },
   "communication": {
-    "hours": {"preferred": "10:00-16:00", "timezone": "America/New_York"},
+    "hours": {"preferred": "09:00-17:00", "timezone": "UTC"},
     "style": ["async-first", "brief->deep", "evidence-led"],
     "response_expectations": {"slack": "same-day", "email": "24-48h"},
-    "meetings": {"default": "decline-with-alt", "max_per_day": 2}
+    "meetings": {"default": "prefer-async-with-alt", "max_per_day": 2}
   },
   "engineering": {
     "principles": [
-      "Prefer declarative infra and GitOps",
-      "Testable changes > heroic fixes",
-      "Small, reversible steps"
-    ],
+      "Write things down",
+      "Small, reversible changes > big bets",
+      "Automate the boring, document the non-boring"
+    ]
   },
   "collaboration": {
-    "decisions": "ADR or ticket comment with rationale and rollback plan",
+    "decisions": "Document decision, rationale, and rollback plan (ADR or ticket)",
     "code_review": {"max_hours_wait": 24, "nits": "batch; avoid bikeshedding"}
   },
   "constraints": {
     "non_negotiables": [
-      "No production changes without traceability",
+      "No changes without traceability and rollback",
       "No group meetings without pre-read"
     ],
     "ethical": ["privacy-by-default", "no dark patterns"]

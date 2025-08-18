@@ -1,24 +1,24 @@
 {
   "version": "0.1",
-  "subject": "did:web:proofofyou.com",
+  "subject": "did:web:example.org",
   "period": {"from": "2024-01-01", "to": "2025-08-18"},
   "highlights": [
     {
-      "type": "deployment_reliability",
+      "type": "reliability_improvement",
       "metric": {"name": "success_rate", "value": 0.992, "window": "Q1 2025"},
       "evidence": [
         {"kind": "dashboard", "url": "https://example.com/grafana/boards/123"},
         {"kind": "ticket", "id": "ENG-2345", "url": "https://jira.example.com/browse/ENG-2345"}
       ],
-      "summary": "Probe tuning and progressive rollouts."
+      "summary": "Improved reliability via safer rollouts and signal tuning."
     },
     {
-      "type": "scaling",
-      "metric": {"name": "cost_reduction", "value_pct": 18},
+      "type": "efficiency",
+      "metric": {"name": "cost_reduction_pct", "value": 18},
       "evidence": [
         {"kind": "PR", "url": "https://github.com/org/repo/pull/1234"}
       ],
-      "summary": "Right-sized ; 38% infra cost down at steady state."
+      "summary": "Right-sizing reduced steady-state cost by 18%."
     }
   ],
   "activity_feed": [

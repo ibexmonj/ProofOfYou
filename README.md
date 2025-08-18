@@ -5,7 +5,7 @@ Your work, your context, your domain.
 
 - Landing page: `index.html`
 - Endpoints: [`rules.json`](./rules.json) · [`contributions.json`](./contributions.json)
-- Schemas: [`schema/rules.schema.json`](./schema/rules.schema.json) · [`schema/contributions.schema.json`](./schema/contributions.schema.json)
+- Schemas: [`schema/rules.schema.json`](./rules.schema.json) · [`schema/contributions.schema.json`](./contributions.schema.json)
 
 **Why:** Reduce bias, increase clarity, and maintain ownership by hosting your own data.
 
