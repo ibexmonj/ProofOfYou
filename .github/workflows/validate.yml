@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm i -g ajv-cli
-      - run: ajv validate -s schema/rules.schema.json -d rules.json
-      - run: ajv validate -s schema/contributions.schema.json -d contributions.json
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm i -g ajv-cli@5 ajv@8 ajv-formats
+      - run: ajv validate --spec=draft2020 --strict=false -s schema/rules.schema.json -d rules.json
+      - run: ajv validate --spec=draft2020 --strict=false -s schema/contributions.schema.json -d contributions.json
   wellknown:
     runs-on: ubuntu-latest
     steps:

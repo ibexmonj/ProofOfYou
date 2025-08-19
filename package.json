@@ -1,0 +1,25 @@
+{
+  "name": "proofofyou",
+  "version": "1.0.0",
+  "description": "**Thesis:** ProofOfYou is a personal API ecosystem. Structured, verifiable data — /rules + /contributions — hosted by you, not a platform. Your work, your context, your domain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibexmonj/ProofOfYou.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibexmonj/ProofOfYou/issues"
+  },
+  "homepage": "https://github.com/ibexmonj/ProofOfYou#readme",
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^3.0.1"
+  }
+}
