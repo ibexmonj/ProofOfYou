@@ -1,0 +1,14 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  ajv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i -g ajv-cli
+      - run: ajv validate -s schema/rules.schema.json -d rules.json
+      - run: ajv validate -s schema/contributions.schema.json -d contributions.json
+  wellknown:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -fsSL https://proofofyou.com/.well-known/did.json | jq -e '.id=="did:web:proofofyou.com"'
